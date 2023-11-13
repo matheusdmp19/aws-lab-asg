@@ -12,7 +12,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      owner      = "matheus.pinho"
+      owner      = var.owner
       managed-by = "terraform"
       app        = "lab-asg"
     }

@@ -1,3 +1,7 @@
+variable "owner" {
+  default = "matheus.pinho"
+}
+
 variable "aws_region" {
   default = "us-east-1"
 }
