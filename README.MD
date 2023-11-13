@@ -1,36 +1,34 @@
 # Aws Lab - ASG
 
-## Objetivo
+The aim of this repository is to have a terraform model to upload to an aws auto scalling group that collects memory utilization metrics from the cloud watch agent and use these metrics for memory-based scaling.
 
-O objetivo desse repositório é ter um modelo em terraform para subir um auto scalling group da aws que colete métricas de utilização de memória pelo cloud watch agent e utilizar essas métricas para escalonamento baseados em memória.
-
-## Requisitos
+## Requirements
 
 - terraform
-- acess key e secret key da aws exportadas como variável de ambiente
+- access key and secret key of aws exported as environment variable
 
-## Configurando o ambiente
+## Setting up the environment
 
     terraform init
 
-## Subindo ambiente
+## Applying terraform
 
     terraform apply
 
-## Destruindo ambiente
+## Removing the environment
 
     terraform destroy
 
-## Comandos úteis
+## Useful commands
 
-Formatar arquivos .tf de forma recursiva
+Format .tf files recursively
 
     terraform fmt --recursive
 
-Validar sintaxes de recursos nos arquivos
+Validate resource syntaxes in files
 
     terraform validade
 
-Planejar alterações antes de aplicar
+Plan changes before applying
 
     terraform plan
